@@ -1,4 +1,12 @@
-<script setup>
+<script>
+  import AppTitle from  './components/AppTitle.vue' 
+  
+  export default{
+    name :'App',
+    components : {
+      AppTitle
+    },
+  }
 
 </script>
 
@@ -11,7 +19,9 @@
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  
+
+  <AppTitle />
+
 </template>
 
 <style scoped>
